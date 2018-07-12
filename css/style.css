@@ -1,0 +1,159 @@
+/* Main Rules */
+@font-face{
+    font-family: Abdo;
+    src: url(../fonts/Abdo-Master-Medium.otf);
+}
+body{
+    font-family: Abdo;
+	 background: linear-gradient(to top, #022b3a, #033c51);
+}
+
+/* Custom CSS */
+.over-lay{
+    height: 100vh;
+    width: 100%;
+	background: url("../img/bg-top.png") center top no-repeat  ;
+	background-size: contain;
+}
+
+.fullimgbackground{
+    background:url("../img/bg-bottom.png") no-repeat ;
+    background-position: center bottom ;
+	 background-repeat:no-repeat;
+     background-size:25%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+ .logo {
+    height: 120px;
+    width: 180px;
+    margin-top: -50px;
+}
+#main-for-mine{
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.2em;
+	display:inline-block;
+    width:100%;
+}
+#main-for-mine strong{
+    font-weight: bold;
+}
+.win {position: relative;}
+.logo-title{
+    font-size: 25px;
+    color: #0393cf;
+    text-transform: uppercase;
+    z-index:2;
+	margin:10px 0 ;
+    display: inline-block;
+    font-weight: bold;}
+
+.left-shape {
+   height: 140px;
+   width: 160px;
+   position: absolute;
+   left:118px;
+   top:-80px;
+   z-index:1}
+
+.right-shape {
+    height: 200px;
+    width: 160px;
+    position: absolute;
+    right: 50px;
+    top:-64px;
+    z-index: 1;}
+
+.stars{
+    animation: stars 1s linear infinite alternate;}
+@-webkit-keyframes stars {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.sub-title {
+    color: #eeaa15;
+    font-size: 16px;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    direction: rtl;}
+.link-download a{margin: 0px 0px ;}
+.app-1 {display: none;}
+.app-2 {}
+.link-download .app-1:hover,
+.link-download .app-2:hover{
+    background: #0c7aa280;
+    webkit-border-radius:7px;
+    moz-border-radius:7px;
+    -o-border-radius: 7px;
+    ms-border-radius: 7px;
+    border-radius: 7px;}
+
+#coin{
+    position: absolute;
+    left: -20px;
+    bottom: -60px;}
+
+#gold {
+    position: absolute;
+    right: -8px;
+    bottom: -80px;}
+
+
+/* Media Query */
+@media screen and (max-width: 1199px){
+    #gold {right: -25px;}
+}
+@media screen and (max-width: 991px){
+    .full-width-breakpoint {             
+        display:none;                 
+        line-height:0;                   
+    }
+    #coin {display: none;}
+    #gold {display: none;}
+}
+@media screen and (max-width:415px) {
+    .logo {
+        height: 90px;
+        width: 130px;
+        margin-top: 25px;
+    }
+    #main-for-mine {
+        font-size: 35px;
+		margin:10px 0}
+    .logo-title{font-size: 16px;}
+    .sub-title {font-size: 12px;}
+
+    .app {
+        width: 130px;
+        height: 41px;}
+	.left-shape{left: -10px;}
+	.right-shape{right:0}
+}
+
+
+@media screen and (max-width:449px) and (max-height:583px) {
+    .logo {
+        margin-top: 50px;
+    }
+    #main-for-mine {
+        font-size: 40px;
+    }
+    .logo-title {
+        font-size: 20px;
+        margin: 5px 0;}
+    .sub-title {font-size: 14px;}
+    .app-2 {
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width:320px) {
+    #main-for-mine {font-size: 25px}
+    .logo-title{font-size: 14px}
+    .sub-title {font-size: 10px}
+    .app-2 {
+        width: 141px;
+        height: 40px;}
+}
